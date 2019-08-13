@@ -1,56 +1,53 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Dennis Morello`,
+    name: `Dennis Morello`,
+    siteUrl: `https://morello.dev`,
+    description: `A blog about web and mobile development by Dennis Morello.`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
-      maxWidth: 652,
+      heading: `A blog about web and mobile development.`,
+      maxWidth: 652
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/dennismorello`
       },
       {
         name: `github`,
-        url: `https://github.com/narative`,
+        url: `https://github.com/dennismorello`
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://instagram.com/dennismrl`
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
-      },
-    ],
+        url: `https://www.linkedin.com/in/dennismorello`
+      }
+    ]
   },
   plugins: [
     {
-      resolve: "@narative/gatsby-theme-novela",
+      resolve: '@narative/gatsby-theme-novela',
       options: {
-        contentPosts: "content/posts",
-        contentAuthors: "content/authors",
-        basePath: "/",
-      },
+        authorsPage: true,
+        basePath: '/',
+        contentPosts: 'content/posts',
+        contentAuthors: 'content/authors'
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
+        name: `Dev Blog by Dennis Morello`,
+        short_name: `Dev Blog`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/assets/favicon.png`,
-      },
-    },
-  ],
+        icon: `src/assets/favicon.png`
+      }
+    }
+  ]
 };
