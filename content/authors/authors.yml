@@ -1,7 +1,6 @@
 - name: Dennis Morello
   bio: |
-    I am a front-end engineer based in Milan. I love writing code, learning new
-    things andexploring the world around me.
+    I am a front-end engineer based in Milan. I love writing code and learning new things.
   avatar: ./avatars/dennis-morello.jpg
   featured: true
   social:
