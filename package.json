@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@narative/gatsby-theme-novela": "^0.*",
-    "gatsby": "^2.13.41",
+    "gatsby": "^2.15.2",
     "gatsby-plugin-mailchimp": "^5.1.2",
-    "gatsby-plugin-manifest": "^2.2.4",
-    "gatsby-plugin-offline": "^3.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "gatsby-plugin-manifest": "^2.2.13",
+    "gatsby-plugin-offline": "^3.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
