@@ -3,6 +3,9 @@
   "name": "dev-blog-morello",
   "version": "1.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
