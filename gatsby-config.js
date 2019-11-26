@@ -29,12 +29,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: '@narative/gatsby-theme-novela',
+      resolve: "@narative/gatsby-theme-novela",
       options: {
-        authorsPage: true,
-        basePath: '/',
-        contentPosts: 'content/posts',
-        contentAuthors: 'content/authors'
+        authorsPage: true
       }
     },
     {
