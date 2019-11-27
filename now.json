@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "GA_TRACKID": "@ga-morello-dev"
+    }
+  }
+}
