@@ -31,13 +31,19 @@ module.exports = {
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
-        authorsPage: true
+        contentPosts: "content/posts",
+        contentAuthors: "content/authors",
+        basePath: "/",
+        authorsPage: true,
+        sources: {
+          local: true
+        }
       }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dev Blog by Dennis Morello`,
+        name: `Dev Blog`,
         short_name: `Dev Blog`,
         start_url: `/`,
         background_color: `#fff`,
