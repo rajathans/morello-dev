@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "GA_TRACKID": "@ga-morello-dev"
+      "GTM_ID": "@gtm-morello-dev"
     }
   }
 }
