@@ -57,7 +57,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/assets/favicon.png`
       }
-    },
-    `gatsby-plugin-offline`
+    }
+    //`gatsby-plugin-offline`
   ]
 };
