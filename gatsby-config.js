@@ -46,6 +46,8 @@ module.exports = {
         id: process.env.GTM_ID
       }
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

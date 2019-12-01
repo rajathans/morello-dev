@@ -22,6 +22,8 @@
     "gatsby-plugin-google-tagmanager": "^2.1.18",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^3.0.24",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sitemap": "^2.2.22",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
