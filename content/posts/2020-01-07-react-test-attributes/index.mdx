@@ -1,0 +1,120 @@
+---
+title: React Test Attributes
+author: Dennis Morello
+date: 2020-01-07
+hero: ./images/hero.png
+excerpt: Introducing React Test Attributes, a React library to add data-* to DOM elements.
+tags:
+  [
+    "typescript",
+    "javascript",
+    "js",
+    "react",
+    "reactjs",
+    "dom",
+    "e2e",
+    "data",
+    "test",
+    "testing",
+    "selenium",
+    "cypress",
+    "attributes",
+  ]
+---
+
+I wrote a new library for animating React components when they enter the viewport! It is called [React Awesome Reveal](https://github.com/dennismorello/react-awesome-reveal) and it is already available for you to try 🎉
+
+## Introduction
+
+I was a happy user of [React Reveal](https://github.com/rnosov/react-reveal), a full-of-features and mature library for animating React components. It is quite popular (~1.5K ⭐️ on GitHub and ~35K downloads/week from NPM at the time of writing) and there is apparently no need to start writing a similar library.
+
+The fact is, developers are curious by nature (or at least they _should_), and as a front-end developer I always try to improve myself by studying and experimenting. So, I examined the source code of React Reveal and I realized that it uses synchronous listeners on document scroll and window resize events to determine if each observed element is inside or outside the viewport. This works fine, and when the library was first written this was the only way to handle the problem, but year after year the Web has evolved, and new APIs came out.
+
+With the advent of the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) and [CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) the rules have changed, and now that they are officialy supported by _almost all_ Web browsers we can make use of them.
+
+> The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport – MDN
+
+That said, I started writing React Awesome Reveal using these APIs and React Hooks, and the results are quite impressive: in a few lines of code, I have implemented a fully working and performant animation library (see the demo section below).
+
+## Features
+
+### 🎁 Modern Stack
+
+It uses modern Web technologies and it uses tha latest React features.
+
+### 🏷 TypeScript Support
+
+It is written in TypeScript to make it easier and faster to use the library (type definitions files are included in the package).
+
+### 🍃 Lightweight
+
+Very little footprint on your project and no other dependencies required.
+
+### ⚙️ Uses Native APIs
+
+Intersection Observer API and CSS Animations are now supported by all major browsers.
+
+### 🚀 Fast
+
+Buttery smooth experience thanks to the use of native asynchronous APIs and hardware acceleration (CSS Animations are hardware accelerated).
+
+### 🌳 Tree-shakeable
+
+Only the parts you use will be included in your final bundle.
+
+## Quick Start
+
+### Installation
+
+To add this library to your project, simply run
+
+```shell
+npm install react-awesome-reveal --save
+```
+
+or, if you are using Yarn (as I strongly suggest):
+
+```shell
+yarn add react-awesome-reveal
+```
+
+### Using Effects
+
+You can wrap any React element in an [effect component](https://github.com/dennismorello/react-awesome-reveal#supported-effects). For example, to gently fade in an image when it enters the viewport:
+
+```jsx
+import React from "react";
+import { Fade } from "react-awesome-reveal";
+
+const MyComponent = () => {
+  return (
+    <Fade>
+      <img src="path/to/image" />
+    </Fade>
+  );
+};
+```
+
+You can also customize some animation parameters (refer to the project [README](https://github.com/dennismorello/react-awesome-reveal/blob/master/README.md) file):
+
+```jsx
+<Fade triggerOnce duration={800} delay={1000}>
+  <img src="path/to/image" />
+</Fade>
+```
+
+The code above tells the `Fade` component to trigger the animation only the first time the image appears inside the viewport with a delay of one second and to set the duration to 800 milliseconds.
+
+## Demo
+
+You can play with all the supported effects on the [demo site](https://react-awesome-reveal.morello.dev).
+
+## Future Plans
+
+At the moment, I focused on project structure, performances and the demo website. In the future, I will extend the API with more features inspired from React Reveal (such the `when`, `collapse` and `spy` props), and of course some ideas coming from the users.
+
+## Feedbacks
+
+Every feedback is more than welcome! If you have feature requests or if you discover bugs, do not hesitate to [open an issue](https://github.com/dennismorello/react-awesome-reveal/issues) on GitHub.
+
+You can also [write me](mailto:dennismorello@gmail.com) if you need help or if you just want to thank me 🙏🏻 In any case, do not forget to follow me on [Twitter](https://twitter.com/dennismorello) and to star the project on GitHub!
