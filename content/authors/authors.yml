@@ -1,7 +1,7 @@
 - name: Dennis Morello
   bio: |
     I am a front-end developer based in Milan. I love learning new things and staying up-to-date with the latest web technologies.
-  avatar: ./avatars/dennis-morello.jpg
+  avatar: ./avatars/dennis-avatar.png
   featured: true
   social:
     - name: github
