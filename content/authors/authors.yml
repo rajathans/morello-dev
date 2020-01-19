@@ -3,6 +3,7 @@
     I am a front-end developer based in Milan. I love learning new things and staying up-to-date with the latest web technologies.
   avatar: ./avatars/dennis-avatar.png
   featured: true
+  slug: me
   social:
     - name: github
       url: https://github.com/dennismorello
