@@ -4,8 +4,9 @@ author: Dennis Morello
 date: 2019-03-11
 hero: ./images/hero.jpg
 excerpt: A component composition-based approach to conditional rendering.
+slug: conditional-rendering-in-react
 tags:
-  ['react', 'jsx', 'hooks', 'conditional rendering', 'component composition']
+  ["react", "jsx", "hooks", "conditional rendering", "component composition"]
 ---
 
 The declarative approach of [React](https://reactjs.org) makes writing user interfaces easier than ever. In this post, I will explain how to conditionally render things by using the component composition pattern.
@@ -82,16 +83,16 @@ Let's see the code of the `If` component:
 ```jsx
 const If = props => {
   const thenComponent =
-    'length' in props.children
-      ? props.children.find(child => child.type.name === 'Then')
-      : props.children.type.name === 'Then'
+    "length" in props.children
+      ? props.children.find(child => child.type.name === "Then")
+      : props.children.type.name === "Then"
       ? props.children
       : null;
 
   const elseComponent =
-    'length' in props.children
-      ? props.children.find(child => child.type.name === 'Else')
-      : props.children.type.name === 'Else'
+    "length" in props.children
+      ? props.children.find(child => child.type.name === "Else")
+      : props.children.type.name === "Else"
       ? props.children
       : null;
 
@@ -105,9 +106,9 @@ Let's focus on the assignment of `thenComponent` (the same considerations hold f
 
 ```jsx
 const thenComponent =
-  'length' in props.children
-    ? props.children.find(child => child.type.name === 'Then')
-    : props.children.type.name === 'Then'
+  "length" in props.children
+    ? props.children.find(child => child.type.name === "Then")
+    : props.children.type.name === "Then"
     ? props.children
     : null;
 ```

@@ -1,23 +1,26 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import styles from "./Logo.module.css";
+import styled from "@emotion/styled";
 
 const Logo = ({ fill = "white" }) => {
-  const { site } = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
-    <h3 className={styles.Logo} style={{ color: fill }}>
-      {site.siteMetadata.title}
-    </h3>
+    <LogoContainer>
+      <h3 style={{ color: fill }}>
+        morello<span style={{ color: "#7A8085" }}>.dev</span>
+      </h3>
+    </LogoContainer>
   );
 };
 
 export default Logo;
+
+const LogoContainer = styled.div`
+  h3 {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 735px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+`;
