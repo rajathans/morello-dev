@@ -3,9 +3,9 @@ module.exports = {
     title: `Dennis Morello`,
     name: `Dennis Morello`,
     siteUrl: `https://morello.dev`,
-    description: `A blog about web and mobile development by Dennis Morello.`,
+    description: `Notes about JavaScript, ReactJS and more by Dennis Morello.`,
     hero: {
-      heading: `A blog about web and mobile development.`,
+      heading: `Notes about <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noreferrer" style="background-color:#edd53f;color:#252724">JavaScript</a>, <a href="https://reactjs.org" target="_blank" rel="noreferrer" style="background-color:#282c34;color:#61dafb">ReactJS</a> and more.`,
       maxWidth: 652
     },
     social: [
