@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `JavaScript notes by Dennis Morello`,
+    title: `JavaScript Notes by Dennis Morello`,
     name: `Dennis Morello`,
     siteUrl: `https://morello.dev`,
-    description: `Notes about JavaScript, ReactJS and more by Dennis Morello.`,
+    description: `Notes about JavaScript, ReactJS and more about front-end development by Dennis Morello.`,
     hero: {
       heading: `Notes about <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noreferrer" style="background-color:#edd53f;color:#252724">JavaScript</a>, <a href="https://reactjs.org" target="_blank" rel="noreferrer" style="background-color:#282c34;color:#61dafb">ReactJS</a> and more by Dennis Morello.`,
       maxWidth: 652
@@ -52,8 +52,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dev Blog`,
-        short_name: `Dev Blog`,
+        name: `JavaScript Notes by Dennis Morello`,
+        short_name: `JS Notes`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
